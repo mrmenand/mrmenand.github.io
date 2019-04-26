@@ -3,27 +3,27 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>Hexo</title>
+  <title>Mr.Menand</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   
   
   
   <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="Mr.Menand">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="Mr.Menand">
 <meta property="og:locale" content="default">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="Mr.Menand">
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-
+    <link rel="alternate" href="/atom.xml" title="Mr.Menand" type="application/atom+xml">
   
 
-  <link rel="icon" href="/css/images/mylogo.jpg">
-  <link rel="apple-touch-icon" href="/css/images/mylogo.jpg">
+  
+
+  <link rel="icon" href="/css/images/nuo.png">
+  <link rel="apple-touch-icon" href="/css/images/nuo.png">
   
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   
@@ -107,7 +107,7 @@
                   
                     <div class="item">
                   
-                    <img id="carousel-img1" src="/css/images/home-bg.gif">
+                    <img id="carousel-img1" src="https://source.unsplash.com/random/1920x1080">
                   </div>
 
                   <!-- 自适应大图 -->
@@ -201,16 +201,13 @@
     
 
     
-      <div id="homelogo" class="homelogo" style="background: rgba(255,255,255,1);"> 
+      <div id="homelogo" class="homelogo"> 
     
 
         
-          <div class="homelogoback" style="border: 1px solid #404040;">
-            <h1><a href="#content" id="logo">Hexo</a></h1>
-            <h3></h3>
-            <h5>John Doe</h5>
-            <!-- <p><a href="https://github.com/iTimeTraveler" target="_blank">Github</a></p> -->
-          </div>
+          
+            <img id="homelogoimg" src="/css/images/xian.png">
+          
         
     
     </div>
@@ -222,14 +219,17 @@
  <!-- home_logo_image居中 -->
  
     <script>
+        var img = new Image();
         var homelogodiv = document.getElementById("homelogo");
-        if (document.all.homelogo.offsetWidth > document.body.clientWidth) {
-          homelogodiv.style.width = document.body.clientWidth + "px";
-          homelogodiv.style.marginLeft = document.body.clientWidth * -0.5 + "px";
-        } else {
-          homelogodiv.style.width = homelogodiv.clientWidth  + "px";
-          homelogodiv.style.marginLeft = (homelogodiv.clientWidth)  * -0.5 + "px";
-        }
+        img.src = document.getElementById("homelogoimg").src;
+        img.onload=function(){
+          if (img.width > document.body.clientWidth) {
+            document.getElementById("homelogoimg").style.width = document.body.clientWidth + "px";
+            homelogodiv.style.marginLeft = document.body.clientWidth * -0.5 + "px";
+          } else {
+            homelogodiv.style.marginLeft = img.width * -0.5 + "px";
+          }
+        };
     </script>
   
 
@@ -324,7 +324,7 @@ Quick StartCreate a new post1$ hexo new "My New Post...
   <div class="container">
       	<div class="row">
 	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
-	      <p id="copyRightEn">Copyright &copy; 2013 - 2019 Hexo All Rights Reserved.</p>
+	      <p id="copyRightEn">Copyright &copy; 2019 - 2019 Mr.Menand All Rights Reserved.</p>
 	      
 	      
     		<p class="busuanzi_uv">
@@ -475,10 +475,10 @@ Quick StartCreate a new post1$ hexo new "My New Post...
         </div>
          <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
           <div class="panel-body">
-            Hexo
+            Mr.Menand
           </div>
           <div class="panel-body">
-            Copyright © 2019 John Doe All Rights Reserved.
+            Copyright © 2019 mr_menand All Rights Reserved.
           </div>
         </div>
       </div>
