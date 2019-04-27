@@ -90,8 +90,8 @@
 
             
               <a class="brand" style="
-                 margin-top: 0px;">
-                  <img width="100px" height="100px" alt="Hike News" src="/css/images/avatar.jpg">
+                 margin-top: 10px;">
+                  <img width="90px" height="90px" alt="Hike News" src="/css/images/avatar.jpg">
               </a>
             
             
@@ -181,31 +181,6 @@
 	                    } else {
 	                      imageTag0.style.height = h + "px";
 	                      imageTag0.style.marginLeft = -(h * img0.width / img0.height - document.body.clientWidth) / 2 + "px";
-	                    }
-	                  };
-              	  };
-                  carouselResize();
-              </script>
-            
-              
-                <div class="item" style="max-height:600px; overflow: hidden;">
-              
-                <img id="carousel-img1" src="/css/images/avatar.jpg">
-              </div>
-
-              <!-- 自适应大图 -->
-              <script>
-              	  var carouselResize = function() {
-              	  	  var h = document.body.clientHeight / 3;
-	                  var img1 = new Image();
-	                  var imageTag1 = document.getElementById("carousel-img1");
-	                  img1.src = imageTag1.src;
-	                  img1.onload=function(){
-	                    if (img1.width / img1.height <= document.body.clientWidth / h) {
-	                      imageTag1.style.width = document.body.clientWidth + "px";
-	                    } else {
-	                      imageTag1.style.height = h + "px";
-	                      imageTag1.style.marginLeft = -(h * img1.width / img1.height - document.body.clientWidth) / 2 + "px";
 	                    }
 	                  };
               	  };
